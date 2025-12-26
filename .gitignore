@@ -1,0 +1,69 @@
+# =========================
+# Node.js
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+*.log
+
+# =========================
+# Environment Files
+# =========================
+.env
+.env.*
+!.env.example   # Keep template version tracked
+
+# =========================
+# Build Outputs
+# =========================
+dist/
+build/
+coverage/
+
+# =========================
+# IDE & OS
+# =========================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# =========================
+# Temp & Swap Files
+# =========================
+*.swp
+*.swo
+
+# =========================
+# Terraform
+# =========================
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+!env/dev.tfvars
+!env/stage.tfvars
+!env/prod.tfvars
+
+.terraform/
+.terraform.lock.hcl
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# =========================
+# Lambda Package Artifacts
+# =========================
+lambda-package.zip
+*.zip
+
+# =========================
+# Sensitive Files
+# =========================
+terraform.tfvars
+secrets.tfvars
